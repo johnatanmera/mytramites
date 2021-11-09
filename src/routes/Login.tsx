@@ -90,7 +90,7 @@ export default function Login() {
             <ul>
               {users.map((user, i:Key) => (
                 
-                  <li key={i}>{user.email}{' '}{user.otp}</li>
+                  <li key={i}>{user.email}</li>
                   
                
               ))}

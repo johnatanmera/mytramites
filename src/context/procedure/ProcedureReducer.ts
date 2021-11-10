@@ -24,6 +24,7 @@ export const procedureReducer = (state: ProcedureState, action: ProcedureAction)
                     procedures: state.procedures.map(({...procedure}) =>{
                         if(procedure.id === action.payload.id){
                             procedure.completed = !procedure.completed;
+                            
                         }
                         return procedure;
                     })
